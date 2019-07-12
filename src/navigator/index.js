@@ -1,16 +1,16 @@
 import { createStackNavigator, createBottomTabNavigator } from "react-navigation";
-import Tela0 from "../features/test1/components/tela0";
-import Tela1 from "../features/test1/components/tela1";
+import Login from "../features/login/components/Credentials";
+import Feed from "../features/login/components/Feed";
 import Tela2 from "../features/test2/components/tela2";
 import Tela3 from "../features/test2/components/tela3";
 
 const HelloNavigator = createStackNavigator(
   { 
-    Tela0: Tela0,
-    Tela1: Tela1
+    Login: Login,
+    Feed: Feed
   },
   {
-    initialRouteName: 'Tela0',
+    initialRouteName: 'Login',
     headerMode: 'none'
   }
 )
